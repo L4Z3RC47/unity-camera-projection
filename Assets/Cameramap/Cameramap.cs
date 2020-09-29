@@ -23,6 +23,10 @@ public class Cameramap : MonoBehaviour
         matProjection_ = new Material(proj);
         CameraSetting();
     }
+    
+    void LateUpdate(){
+        CameraSetting();
+    }
 
     void OnRenderImage(RenderTexture src, RenderTexture dst)
     {
